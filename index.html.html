@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id ="il"></h1>    
+  <script>
+        document.querySelector("#il").innerText = "Cost to buy a ticket to a movie is 300PKR"
+    </script>
+     <input type="number" placeholder="Enter ticket quantity" id="hj">
+     <button onclick="submit()">Total</button><br>
+     <h3 id="ik"></h3>
+     <h1>Temperature Converter</h1>
+     <input type="number" placeholder="Enter in Fahrenheit" id="Fahrenheit">
+     <button onclick="submit1()">calculate</button>
+     <h2 id="ku">is</h2>
+     <input type="number" placeholder="Enter in Celsius " id="Celsius">
+     <button onclick="submit2()">calculate</button>
+     <h2 id="tu">is</h2>
+     <script>
+        function submit2(){
+            let Celsius = document.querySelector("#Celsius").value
+            console.log("Celsius",Celsius);
+          let Fahrenheit =(Number(Celsius)*9/5)+32  ;
+          console.log("Fahrenheit",Fahrenheit);
+           document.querySelector('#tu').innerText=Fahrenheit;
+         }
+         function submit(){
+            let hj = document.querySelector("#hj").value
+            console.log("hj",hj);
+          let result = Number(hj) * 300;
+          console.log("result",result);
+           document.querySelector('#ik').innerText=result;
+         }
+        // let a = prompt("which table");
+        //  table = a +" x 1 = " + a*1+ "\n";
+        // document.write(table)
+        function submit1(){
+          let Fahrenheit = document.querySelector("#Fahrenheit").value
+          console.log("Fahrenheit",Fahrenheit); 
+        let Celsius = (Number(Fahrenheit)-32)*5/9
+        console.log("Celsius",Celsius);
+        document.querySelector("#ku").innerText=Celsius}            
+     </script>
+</body>
+</html>
